@@ -1,0 +1,66 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+.container {
+  max-width: 106rem;
+  margin: 0 auto;
+  position: relative;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.8rem;
+  color: #221f1f;
+}
+
+.u-bold-text {
+  font-weight: 700;
+}
+
+.header {
+  background-color: #4b73b5;
+  height: 7.6rem;
+}
+
+.logo {
+  position: absolute;
+  top: 2rem;
+  left: 0;
+}
+
+.contacts {
+  position: absolute;
+  top: 2rem;
+  right: 0;
+}
+
+.contacts__phone, .contacts__phone:visited {
+  font-size: 2.1rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: #fff;
+}
+
+.contacts__scheduling {
+  display: block;
+  text-align: right;
+  font-size: 1.4rem;
+  color: #fff;
+  opacity: .7;
+}
+
+.contacts__popup {
+  display: none;
+}

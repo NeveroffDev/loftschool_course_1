@@ -1,16 +1,6 @@
-*,
-*::after,
-*::before{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@import "base/varibles";
+@import "base/base";
+@import "base/typography";
+@import "base/utilites";
 
-html{
-  font-size: 62.5%;
-  box-sizing: inherit;
-}
-
-body{
-  background: #234;
-}
+@import "layouts/header";

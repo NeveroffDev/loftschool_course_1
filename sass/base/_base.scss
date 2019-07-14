@@ -1,0 +1,22 @@
+*,
+*::after,
+*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+  box-sizing: inherit;
+}
+
+body{
+
+}
+
+.container{
+  max-width: 106rem;
+  margin: 0 auto;
+  position: relative;
+}

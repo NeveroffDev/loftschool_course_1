@@ -23,7 +23,7 @@ const autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('sass', function () {
     return gulp.src('sass/main.scss')
-        .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+        .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
         .pipe(rename('styles.css'))
         .pipe(gulp.dest('build/css'))
 });

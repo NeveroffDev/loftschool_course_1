@@ -1,0 +1,36 @@
+.header{
+  background-color: $primary-color;
+  height: 7.6rem;
+}
+
+.logo{
+  position: absolute;
+  top: 2rem;
+  left: 0;
+}
+
+.contacts{
+  position: absolute;
+  top: 2rem;
+  right: 0;
+
+
+  &__phone,
+  &__phone:visited{
+    font-size: 2.1rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: $whiter-color;
+
+  }
+  &__scheduling{
+    display: block;
+    text-align: right;
+    font-size: 1.4rem;
+    color: $whiter-color;
+    opacity: .7;
+  }
+  &__popup{
+    display: none;
+  }
+}
