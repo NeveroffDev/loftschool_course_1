@@ -1,0 +1,92 @@
+.footer{
+  padding-top: 1.2rem;
+  height: 7.5rem;
+  background-color: $primary-color;
+  text-align: center;
+  font-size: 0;
+  &__copyright{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 25rem;
+    font-size: 1.4rem;
+    display: inline-block;
+    color: $whiter-color;
+    line-height: 1.8rem;
+    text-align: left;
+  }
+  &__logo{
+    padding-top: 1rem;
+    display: inline-block;
+  }
+  &__social{
+    text-align: left;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-weight: 700;
+    color: $whiter-color;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+  &__social-heading{
+
+    margin-bottom: 1rem;
+  }
+  &__link{
+    color: $whiter-color;
+    font-weight: 700;
+  }
+  &__link + span{
+    font-weight: 700;
+  }
+
+  &__social-list{
+    display: inline-block;
+  }
+
+  &__social-item{
+
+  }
+
+  &__social-link{
+    display: inline-block;
+
+
+  }
+  &__social-img{
+    border-radius: 50%;
+    background-color: $whiter-color;
+    display: inline-block;
+    height: 2rem;
+    width: 2rem;
+    background-position: center center;
+    background-repeat: no-repeat;
+    opacity: .8;
+    &--vk{
+      background-image: url(../img/vk.png);
+    }
+    &--fb{
+      background-image: url(../img/fb.png);
+    }
+    &--gp{
+      background-image: url(../img/gp.png);
+    }
+    &--tw{
+      background-image: url(../img/tw.png);
+    }
+    &--email{
+      background-image: url(../img/email.png);
+    }
+    &:hover{
+      opacity: 1;
+    }
+  }
+
+  &__social-link:not(:last-child){
+    margin-right: 1rem;
+  }
+
+
+
+}

@@ -1,0 +1,49 @@
+.news {
+  font-size: 0;
+  margin-bottom: 6rem;
+  &__list{
+    margin-bottom: 6rem;
+  }
+  &__new-box {
+    padding: 3rem 0 2rem 0;
+  }
+  &__new-box:not(:last-child){
+    border-bottom: 2px solid $light-gray-color;
+  }
+
+  &__image {
+    display: inline-block;
+    width: 16rem;
+    height: 16rem;
+    overflow: hidden;
+    border-radius: 50%;
+    vertical-align: top;
+    margin-right: 2rem;
+  }
+
+  &__desc {
+    vertical-align: top;
+    width: 70rem;
+    display: inline-block;
+
+  }
+
+  &__date {
+    font-weight: 300;
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+  }
+
+  &__heading{
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  &__text{
+    font-size: 1.8rem;
+    line-height: 3rem;
+    font-weight: 300;
+  }
+
+}

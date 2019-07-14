@@ -1,6 +1,7 @@
 .header{
   background-color: $primary-color;
   height: 7.6rem;
+  margin-bottom: 1.3rem;
 }
 
 .logo{
@@ -13,8 +14,8 @@
   position: absolute;
   top: 2rem;
   right: 0;
-
-
+  text-align: right;
+  font-style: normal;
   &__phone,
   &__phone:visited{
     font-size: 2.1rem;
@@ -23,9 +24,9 @@
     color: $whiter-color;
 
   }
-  &__scheduling{
+  &__scheduling,
+  &__scheduling:visited{
     display: block;
-    text-align: right;
     font-size: 1.4rem;
     color: $whiter-color;
     opacity: .7;
