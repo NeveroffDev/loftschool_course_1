@@ -3,13 +3,11 @@
 *::before {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 html {
   font-size: 62.5%;
-  -webkit-box-sizing: inherit;
   box-sizing: inherit;
 }
 
@@ -63,11 +61,16 @@ a {
   display: inline-block;
   width: 25rem;
   text-align: center;
-  margin-right: 2rem;
   padding: 3.5rem 0;
+  border: 1px solid transparent;
+  transition: border .5s ease;
 }
 
-.prices__item--border {
+.prices__item:not(:last-child){
+  margin-right: 2rem;
+}
+
+.prices__item:hover {
   border: 1px solid #e8e9ed;
   border-radius: .5rem;
 }
@@ -212,13 +215,7 @@ a {
   margin-right: 1rem;
 }
 
-.pagination__right-arrow {
-  display: inline-block;
-}
 
-.pagination__left-arrow {
-  display: inline-block;
-}
 
 .pagination__list {
   display: inline-block;
@@ -244,10 +241,15 @@ a {
 }
 
 .pagination__arrow {
-  padding: 1rem;
+  font-size: 1.4rem;
+  margin-right: .5rem;
+  display: inline-block;
+}
+.pagination__arrow:last-child{
+  margin-left: .5rem;
 }
 
-.pagination__arrow-disabled {
+.pagination__arrow--disabled {
   opacity: .3;
 }
 
@@ -266,31 +268,39 @@ a {
   vertical-align: middle;
   margin-right: 1.3rem;
   display: inline-block;
-  width: 2.3rem;
-  height: 1.8rem;
-  background-repeat: no-repeat;
-  background-position: center center;
+  width: 2rem;
+  height: 2rem;
+  fill: red;
 }
 
-.sidebar__icon--main {
-  background-image: url(../img/main_icon.png);
+.sidebar__icon{
+  height: 3.2rem;
+  width: 3.2rem;
+  fill: red;
+  display: inline-block;
+}
+.sidebar__item image{
+  fill: red;
+}
+.sidebar__icon:hover{
+  fill: blue;
 }
 
-.sidebar__icon--feed {
-  background-image: url(../img/feed_icon.png);
-}
 
-.sidebar__icon--team {
-  background-image: url(../img/team_icon.png);
-}
 
 .sidebar__link {
+  line-height: 1.8rem;
   letter-spacing: .24rem;
   font-weight: 700;
   font-size: 1.2rem;
   display: inline-block;
   text-transform: uppercase;
   text-decoration: none;
+  vertical-align: middle;
+  transition: color .4s ease;
+}
+.sidebar__item:hover .sidebar__link{
+  color: #000;
 }
 
 .sidebar__link--active {
@@ -354,6 +364,7 @@ a {
 .footer {
   position: relative;
   height: 7.5rem;
+  padding-top: 1.8rem;
   background-color: #4b73b5;
   text-align: center;
   font-size: 0;
@@ -362,7 +373,7 @@ a {
 .footer__copyright {
   position: absolute;
   left: 0;
-  top: 1.2rem;
+  top: -.6rem;
   width: 25rem;
   font-size: 1.4rem;
   display: inline-block;
@@ -372,14 +383,13 @@ a {
 }
 
 .footer__logo {
-  padding-top: 1.8rem;
   display: inline-block;
 }
 
 .footer__social {
   text-align: left;
   position: absolute;
-  top: 1.5rem;
+  top: -.6rem;
   right: 0;
   font-weight: 700;
   color: #fff;
