@@ -380,6 +380,7 @@ section{
 .reviews__textarea{
   min-height: 9rem;
   max-width: 100%;
+  resize: none;
 }
 .reviews__textarea:focus, .reviews__input:focus{
   border: 1px solid #4b73b5;
