@@ -348,12 +348,16 @@ section{
   align-items: flex-start;
   flex-wrap: wrap;
 }
+
 .reviews__input-box{
   width: 49%;
   display: flex;
   flex-direction: column;
+}
+.reviews__input-box:not(:nth-last-child(2)){
   margin-bottom: 2rem;
 }
+
 
 .reviews__textarea-box{
   width: 100%;
