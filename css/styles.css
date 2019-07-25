@@ -688,6 +688,7 @@ a {
   position: relative;
   padding: 1.5rem 0;
   background-color: #4b73b5;
+
 }
 
 .footer__container{
@@ -703,7 +704,6 @@ a {
   line-height: 1.8rem;
   text-align: left;
 }
-
 
 .footer__social {
   right: 0;
@@ -727,12 +727,9 @@ a {
 }
 
 .footer__social-list {
-  display: inline-block;
+  display: flex;
 }
 
-.footer__social-item {
-  display: inline-block;
-}
 
 .footer__social-item:not(:last-child) {
   margin-right: .7rem;
