@@ -890,6 +890,7 @@ section {
     animation-fill-mode: backwards;
     animation-timing-function: cubic-bezier(0,.5,.5,1);
     animation-delay: .5s;
+    text-decoration: none;
 }
 
 .inter-box__logo {
@@ -906,12 +907,11 @@ section {
     letter-spacing: .3rem;
     font-weight: 700;
     border-radius: 3px;
-    text-decoration: none;
     text-transform: uppercase;
     transition: all .4s ease;
 }
 
-.inter-box__button:hover {
+.inter-box__wrapper:hover .inter-box__button{
     color: #fff;
     background-color: #1c5bc3;
 }
