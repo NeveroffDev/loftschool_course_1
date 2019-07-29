@@ -872,35 +872,36 @@ section {
 }
 
 .inner__page {
-    background: url("../img/intro_bg.jpg") center center no-repeat;
-    background-size: cover;
+    background: url("../img/intro_bg.jpg") center center / cover no-repeat;
     position: relative;
     height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .inter-box {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .inter-box__wrapper {
     animation: loader .5s;
     animation-fill-mode: backwards;
-    animation-timing-function: linear;
+    animation-timing-function: cubic-bezier(0,.5,.5,1);
     animation-delay: .5s;
 }
 
 .inter-box__logo {
-    margin-bottom: 4rem;
+    display: block;
+    margin: 0 auto 4rem auto;
 }
 
 .inter-box__button {
     display: block;
     padding: 2rem;
     border: 1px solid #1c5bc3;
+    color: #1c5bc3;
     font-size: 1.2rem;
     letter-spacing: .3rem;
     font-weight: 700;
@@ -926,15 +927,16 @@ section {
         opacity: 0;
     }
     25% {
-        transform: translateY(-50px);
+        transform: translateY(-70px);
+
     }
     50% {
         transform: translateY(0);
         opacity: 1;
     }
 
-    80%{
-        transform: translateY(-10px);
+    70%{
+        transform: translateY(-15px);
     }
     100% {
         transform: translateY(0);
