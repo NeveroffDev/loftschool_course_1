@@ -15,17 +15,19 @@
 <div class="wrapper">
     <header class="header">
         <div class="container header__container">
-            <a href="/" class="logo">
+            <a href="./main.html" class="logo">
                 <img src="./img/logo_header.png" alt="Logo" class="logo__img">
             </a>
 
             <address class="contacts">
                 <a href="tel:+78000039210" class="contacts__phone">8(800) 00-392-10</a>
-                <a href="#" class="contacts__scheduling">График работы</a>
-                <div class="contacts__popup">
-                    <div class="contacts__work-time">
-                        <div class="u-bold-text">пн-вс: 09:00-20:00</div>
-                        обед: 14:00-14:30
+                <div class="contact__scheduling">
+                    <a href="#" class="contacts__link">График работы</a>
+                    <div class="contacts__popup">
+                        <div class="contacts__work-time">
+                            <div class="u-bold-text">пн-вс: 09:00-20:00</div>
+                            обед: 14:00-14:30
+                        </div>
                     </div>
                 </div>
             </address>
@@ -34,38 +36,78 @@
     <div class="main-content">
         <div class="container main-content__container">
             <aside class="sidebar">
-                <nav class="sidebar__navigation">
-                    <ul class="sidebar__list">
-                        <li class="sidebar__item"><a href="./" class="sidebar__link ">
-
-                            <i class="icon-main_icon"></i>
-                            Главная</a>
+                <section class="partners">
+                    <div class="partners__heading">Партнёры</div>
+                    <ul class="partners__list">
+                        <li class="partners__item">
+                            <div class="partners__img-box">
+                                <img src="./img/part_1.png" alt=Partner" class="partners__img">
+                            </div>
                         </li>
-                        <li class="sidebar__item"><a href="./reviews.html" class="sidebar__link">
-                            <i class="icon-feed_icon"></i>
-                            Отзывы</a>
+                        <li class="partners__item">
+                            <div class="partners__img-box">
+                                <img src="./img/part_2.png" alt=Partner" class="partners__img">
+                            </div>
                         </li>
-                        <li class="sidebar__item"><a href="./team.html" class="sidebar__link sidebar__link--active">
-                            <i class="icon-team_icon"></i>
-                            Экипаж</a>
+                        <li class="partners__item">
+                            <div class="partners__img-box">
+                                <img src="./img/part_6.png" alt=Partner" class="partners__img">
+                            </div>
+                        </li>
+                        <li class="partners__item">
+                            <div class="partners__img-box">
+                                <img src="./img/part_4.png" alt=Partner" class="partners__img">
+                            </div>
+                        </li>
+                        <li class="partners__item">
+                            <div class="partners__img-box">
+                                <img src="./img/part_5.png" alt=Partner" class="partners__img">
+                            </div>
+                        </li>
+                        <li class="partners__item">
+                            <div class="partners__img-box">
+                                <img src="./img/part_3.png" alt=Partner" class="partners__img">
+                            </div>
                         </li>
                     </ul>
-                </nav>
-
+                </section>
+                <div class="social">
+                    <div class="social__heading">Наши социальные сети</div>
+                    <ul class="social__list">
+                        <li class="social__item"><a href="#" class="social__link">
+                            <span class="social__img social__img--vk"></span>
+                        </a></li>
+                        <li class="social__item"><a href="" class="social__link"><span
+                                class="social__img social__img--fb"></span></a></li>
+                        <li class="social__item"><a href="" class="social__link"><span
+                                class="social__img social__img--gp"></span></a></li>
+                        <li class="social__item"><a href="" class="social__link"><span
+                                class="social__img social__img--tw"></span></a></li>
+                        <li class="social__item"><a href="" class="social__link"><span
+                                class="social__img social__img--email"></span></a></li>
+                    </ul>
+                </div>
             </aside>
             <main class="page-content">
-                <nav class="breadcrumbs">
-                    <ul class="breadcrumbs__list">
-                        <li class="breadcrumbs__item">
-                            <a href="./" class="breadcrumbs__link">Главная</a>
-                            <span class="breadcrumbs__separator">/</span>
-                        </li>
-                        <li class="breadcrumbs__item">
-                            <span class="breadcrumbs__current-page">Экипаж</span>
-                        </li>
-                    </ul>
-                </nav>
-
+                <div class="main-navigation">
+                    <nav class="main-navigation__menu">
+                        <ul class="main-navigation__list">
+                            <li class="main-navigation__item"><a href="./main.html" class="main-navigation__link">
+                                <i class="icon-main_icon"></i>
+                                Главная</a>
+                            </li>
+                            <li class="main-navigation__item"><a href="./reviews.html" class="main-navigation__link">
+                                <i class="icon-feed_icon"></i>
+                                Отзывы</a>
+                            </li>
+                            <li class="main-navigation__item"><a href="./team.html"
+                                                                 class="main-navigation__link  main-navigation__link--active">
+                                <i class="icon-team_icon"></i>
+                                Экипаж</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
                 <section class="team">
                     <h2 class="section-heading">Экипаж</h2>
                     <ul class="team__list">
@@ -166,71 +208,19 @@
                     </ul>
                 </section>
 
-                <section class="partners">
-                    <h2 class="section-heading">Партнёры</h2>
-                    <ul class="partners__list">
-                        <li class="partners__item">
-                            <div class="partners__img-box">
-                                <img src="./img/part_1.png" alt="Partner" class="partners__img">
-                            </div>
-                        </li>
-                        <li class="partners__item">
-                            <div class="partners__img-box">
-                                <img src="./img/part_2.png" alt="Partner" class="partners__img">
-                            </div>
-                        </li>
-                        <li class="partners__item">
-                            <div class="partners__img-box">
-                                <img src="./img/part_6.png" alt="Partner" class="partners__img">
-                            </div>
-                        </li>
-                        <li class="partners__item">
-                            <div class="partners__img-box">
-                                <img src="./img/part_4.png" alt="Partner" class="partners__img">
-                            </div>
-                        </li>
-                        <li class="partners__item">
-                            <div class="partners__img-box">
-                                <img src="./img/part_5.png" alt="Partner" class="partners__img">
-                            </div>
-                        </li>
-                        <li class="partners__item">
-                            <div class="partners__img-box">
-                                <img src="./img/part_3.png" alt="Partner" class="partners__img">
-                            </div>
-                        </li>
-                    </ul>
-                </section>
-
             </main>
-
         </div>
     </div>
-
-
     <footer class="footer">
         <div class="container footer__container">
             <div class="footer__copyright">
                 Сделано с любовью и старанием на курсе «HTML + CSS» в <a href="#" class="footer__link">LoftSchool</a>.
                 Автор работы: <span>Прохладов Вадим</span>
             </div>
-            <img src="./img/logo_header.png" alt="Airplanet" class="footer__logo">
-            <div class="footer__social">
-                <div class="footer__social-heading">Наши социальные сети</div>
-                <ul class="footer__social-list">
-                    <li class="footer__social-item "><a href="#" class="footer__social-link"><span
-                            class="footer__social-img footer__social-img--vk"></span></a></li>
-                    <li class="footer__social-item"><a href="" class="footer__social-link"><span
-                            class="footer__social-img footer__social-img--fb"></span></a></li>
-                    <li class="footer__social-item"><a href="" class="footer__social-link"><span
-                            class="footer__social-img footer__social-img--gp"></span></a></li>
-                    <li class="footer__social-item"><a href="" class="footer__social-link"><span
-                            class="footer__social-img footer__social-img--tw"></span></a></li>
-                    <li class="footer__social-item"><a href="" class="footer__social-link"><span
-                            class="footer__social-img footer__social-img--email"></span></a></li>
-                </ul>
-
+            <div class="footer__logo-box">
+                <img src="./img/logo_header.png" alt="Airplanet" class="footer__logo">
             </div>
+
         </div>
     </footer>
 </div>
