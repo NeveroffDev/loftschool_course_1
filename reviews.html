@@ -15,17 +15,19 @@
 <div class="wrapper">
     <header class="header">
         <div class="container header__container">
-            <a href="/" class="logo">
+            <a href="./main.html" class="logo">
                 <img src="./img/logo_header.png" alt="Logo" class="logo__img">
             </a>
 
             <address class="contacts">
                 <a href="tel:+78000039210" class="contacts__phone">8(800) 00-392-10</a>
-                <a href="#" class="contacts__scheduling">График работы</a>
-                <div class="contacts__popup">
-                    <div class="contacts__work-time">
-                        <div class="u-bold-text">пн-вс: 09:00-20:00</div>
-                        обед: 14:00-14:30
+                <div class="contact__scheduling">
+                    <a href="#" class="contacts__link">График работы</a>
+                    <div class="contacts__popup">
+                        <div class="contacts__work-time">
+                            <div class="u-bold-text">пн-вс: 09:00-20:00</div>
+                            обед: 14:00-14:30
+                        </div>
                     </div>
                 </div>
             </address>
@@ -34,37 +36,56 @@
     <div class="main-content">
         <div class="container main-content__container">
             <aside class="sidebar">
-                <nav class="sidebar__navigation">
-                    <ul class="sidebar__list">
-                        <li class="sidebar__item"><a href="./" class="sidebar__link ">
-
-                            <i class="icon-main_icon"></i>
-                            Главная</a>
-                        </li>
-                        <li class="sidebar__item"><a href="./reviews.html" class="sidebar__link sidebar__link--active">
-                            <i class="icon-feed_icon"></i>
-                            Отзывы</a>
-                        </li>
-                        <li class="sidebar__item"><a href="./team.html" class="sidebar__link">
-                            <i class="icon-team_icon"></i>
-                            Экипаж</a>
-                        </li>
+                <section class="advice">
+                    <div class="advice__item">
+                        <p class="advice__text">
+                            Вопросы по бронированию билетов в нашей авиакомпании принимаются.
+                            <br>Для этого можно оставить <a href="#" class="advice__link">заявку на сайте</a> или же
+                            позвонить по номеру круглосуточной поддержки
+                            <a href="tel:+78000039210" class="advice__phone">8 (800) 00-392-10</a>.
+                        </p>
+                    </div>
+                </section>
+                <div class="social">
+                    <div class="social__heading">Наши социальные сети</div>
+                    <ul class="social__list">
+                        <li class="social__item"><a href="#" class="social__link">
+                            <span class="social__img social__img--vk"></span>
+                        </a></li>
+                        <li class="social__item"><a href="" class="social__link"><span
+                                class="social__img social__img--fb"></span></a></li>
+                        <li class="social__item"><a href="" class="social__link"><span
+                                class="social__img social__img--gp"></span></a></li>
+                        <li class="social__item"><a href="" class="social__link"><span
+                                class="social__img social__img--tw"></span></a></li>
+                        <li class="social__item"><a href="" class="social__link"><span
+                                class="social__img social__img--email"></span></a></li>
                     </ul>
-                </nav>
-
+                </div>
             </aside>
             <main class="page-content">
-                <nav class="breadcrumbs">
-                    <ul class="breadcrumbs__list">
-                        <li class="breadcrumbs__item">
-                            <a href="./" class="breadcrumbs__link">Главная</a>
-                            <span class="breadcrumbs__separator">/</span>
-                        </li>
-                        <li class="breadcrumbs__item">
-                            <span class="breadcrumbs__current-page">Отзывы</span>
-                        </li>
-                    </ul>
-                </nav>
+                <div class="main-navigation">
+                    <nav class="main-navigation__menu">
+                        <ul class="main-navigation__list">
+                            <li class="main-navigation__item"><a href="./main.html" class="main-navigation__link">
+                                <i class="icon-main_icon"></i>
+                                Главная</a>
+                            </li>
+                            <li class="main-navigation__item"><a href="/reviews.html"
+                                                                 class="main-navigation__link  main-navigation__link--active">
+                                <i class="icon-feed_icon"></i>
+                                Отзывы</a>
+                            </li>
+                            <li class="main-navigation__item"><a href="./team.html"
+                                                                 class="main-navigation__link">
+                                <i class="icon-team_icon"></i>
+                                Экипаж</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+
                 <section class="reviews">
                     <h2 class="section-heading">Отзывы</h2>
                     <ul class="reviews__list">
@@ -147,85 +168,52 @@
                         <a href="#" class="pagination__arrow"><i
                                 class="icon-right-arrow pagination__icon-arrow"></i></a>
                     </div>
+                    <div class="reviews__form-box">
+                        <h2 class="section-heading">Оставить отзыв</h2>
+                        <form action="#" class="reviews__form" method="get">
+                            <div class="reviews__input-box">
+                                <label class="reviews__input-label" for="name">Ваше имя</label>
+                                <input id="name" type="text" class="reviews__input" placeholder="Андрей">
+                            </div>
+                            <div class="reviews__input-box">
+                                <label class="reviews__input-label" for="vk">Ссылка на профиль VK</label>
+                                <input id="vk" type="text" class="reviews__input" placeholder="vk.com/sample">
+                            </div>
+                            <div class="reviews__textarea-box">
+                                <label class="reviews__input-label" for="text">Текст отзыва</label>
+                                <textarea id="text" class="reviews__textarea" placeholder="Мне понравилось"></textarea>
+                            </div>
+                            <div class="reviews__input-box">
+                                <span class="reviews__input-label">Отображать фото в отзыве?</span>
+                                <div class="reviews__radio-box">
+                                    <input class="reviews__radio" type="radio" id="photo-true"
+                                           name="photo-view">
+                                    <label class="reviews__radio-label" for="photo-true">Да</label>
+                                    <input class="reviews__radio" type="radio" id="photo-false"
+                                           name="photo-view">
+                                    <label class="reviews__radio-label" for="photo-false">Нет</label>
+                                </div>
+                            </div>
+                            <button class="reviews__submit" type="submit">Отправить<i class="icon-main_icon"></i>
+                            </button>
+
+                        </form>
+                    </div>
+
                 </section>
-
             </main>
-
         </div>
     </div>
-    <div class="advice">
-        <div class="container">
-            <div class="advice__item">
-                <p class="advice__text">
-                    Вопросы по бронированию билетов в нашей авиакомпании принимаются.
-                    <br>Для этого можно оставить <a href="#" class="advice__link">заявку на сайте</a> или же
-                    позвонить по номеру круглосуточной поддержки
-                    <a href="tel:+78000039210" class="advice__phone">8 (800) 00-392-10</a>.
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <section class="reviews-form">
-        <div class="container">
-            <div class="reviews-form__form-box">
-
-                <h2 class="section-heading">Оставить отзыв</h2>
-                <form action="#" class="reviews-form__form" method="get">
-                    <div class="reviews-form__input-box">
-                        <label class="reviews-form__input-label" for="name">Ваше имя</label>
-                        <input id="name" type="text" class="reviews-form__input" placeholder="Андрей">
-                    </div>
-                    <div class="reviews-form__input-box">
-                        <label class="reviews-form__input-label" for="vk">Ссылка на профиль VK</label>
-                        <input id="vk" type="text" class="reviews-form__input" placeholder="vk.com/sample">
-                    </div>
-                    <div class="reviews-form__textarea-box">
-                        <label class="reviews-form__input-label" for="text">Текст отзыва</label>
-                        <textarea id="text" class="reviews-form__textarea" placeholder="Мне понравилось"></textarea>
-                    </div>
-                    <div class="reviews-form__input-box">
-                        <span class="reviews-form__input-label">Отображать фото в отзыве?</span>
-                        <div class="reviews-form__radio-box">
-                            <input class="reviews-form__radio" type="radio" id="photo-true"
-                                   name="photo-view">
-                            <label class="reviews-form__radio-label" for="photo-true">Да</label>
-                            <input class="reviews-form__radio" type="radio" id="photo-false"
-                                   name="photo-view">
-                            <label class="reviews-form__radio-label" for="photo-false">Нет</label>
-                        </div>
-                    </div>
-                    <button class="reviews-form__submit" type="submit">Отправить<i class="icon-main_icon"></i>
-                    </button>
-
-                </form>
-            </div>
-        </div>
-    </section>
-
     <footer class="footer">
         <div class="container footer__container">
             <div class="footer__copyright">
                 Сделано с любовью и старанием на курсе «HTML + CSS» в <a href="#" class="footer__link">LoftSchool</a>.
                 Автор работы: <span>Прохладов Вадим</span>
             </div>
-            <img src="./img/logo_header.png" alt="Airplanet" class="footer__logo">
-            <div class="footer__social">
-                <div class="footer__social-heading">Наши социальные сети</div>
-                <ul class="footer__social-list">
-                    <li class="footer__social-item "><a href="#" class="footer__social-link"><span
-                            class="footer__social-img footer__social-img--vk"></span></a></li>
-                    <li class="footer__social-item"><a href="" class="footer__social-link"><span
-                            class="footer__social-img footer__social-img--fb"></span></a></li>
-                    <li class="footer__social-item"><a href="" class="footer__social-link"><span
-                            class="footer__social-img footer__social-img--gp"></span></a></li>
-                    <li class="footer__social-item"><a href="" class="footer__social-link"><span
-                            class="footer__social-img footer__social-img--tw"></span></a></li>
-                    <li class="footer__social-item"><a href="" class="footer__social-link"><span
-                            class="footer__social-img footer__social-img--email"></span></a></li>
-                </ul>
-
+            <div class="footer__logo-box">
+                <img src="./img/logo_header.png" alt="Airplanet" class="footer__logo">
             </div>
+
         </div>
     </footer>
 </div>
